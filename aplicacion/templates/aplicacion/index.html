@@ -1,0 +1,22 @@
+
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+  <h1 class="title">
+    Esta es mi Aplicacion!
+  </h1>
+  <p class="subtitle">
+    Mi primer sitio Web con <strong>Boostraps</strong>!
+  </p
+  
+  {% for elem in context %}
+  
+    <li>{{ elem }}</li>
+
+  {% endfor %}
+
+  <a type="button" href="{% url 'logout' %}">Salir</a>
+
+{% endblock content %}
+      
